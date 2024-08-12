@@ -1,0 +1,344 @@
+// react basically is a javascript frame Work. it is built on top of javascript.
+
+
+// what is react?
+ 
+// * it is a library for creating user interfaces.
+// * most people think it is not a framework but it is libraray.
+
+// * react is a librarary and in which you can write html and js in a same file 
+// and it has component based structure  means we use componenet structre in react.
+
+// why we use react?
+// * because we have flexibility to  create  multiple script files with react.
+
+// how to built react application? 
+// there are diffrent types of tools to built a react application.
+// most commonly use:- CRA(create react app)
+// React is a User Interface (UI) libraray
+// React is a tool for building UI components
+
+// virtual dom is just a copy of a originial dom.
+// if we change in original dom like div so whole dom will be re-render. render means to show.
+
+// react use a virtual dom , in virtual dom , we have exactly copy of dom, and if we change in virtual 
+// dom like div so what happens, react compare this virtual dom with original dom, and if it seems differnet so
+//  it will replace orignial dom with virtual dom.(virtual dom also called diffing algorithm )    
+//  * it is feature of react
+
+
+//  ** how to create react app?
+//  using command:-npx create-react-app inital
+
+//  *"Which command do we use to go inside the project?"
+//  cd .\inital\ 
+// and then:- npm start
+
+// * src directory means source directory. ye source folder hota hai this folder contain all the source code of react application.
+// [translate in english sentence]
+// The src directory means the source directory. This source folder contains all the source code of the React application."
+
+// <App/>:-it is component
+// <react.strictmode>:-it is a rule by default(react runs in a strict mode)
+
+// <!-- import means:-lana -->
+// <!-- export means:- bhejna -->
+// <!-- root means node -->
+
+// react use component based structure or react use functional components.
+
+// return keyword:- it is use to return something out of a function.
+
+// * every component in which you are using return keyword aur wo dikhane ka kaam krega on UI.
+
+//  basic first rule of react:-
+//  //jo bhi humai js likhna hai wo hum return keyword ke phle likhege,and we will write whatever we want   render on html page after the return keyword.
+//  // rule is such that ki you have to write the name of the functional componenet in the first letter capital letter.
+// * after returm keyword  html and return before js
+
+//  components folder:-this folder content all the resuable UI element. 
+
+// public folder:- it contains, index.html, this file which runs first on the browser.
+
+// npm(node package manager):- npm is open source.we can install different-different packages.
+
+// node moduls- jo bhi package hum install krege ,package means some pack that is providing some features.
+// so it will go in node module.
+
+// pacakage.json:-whatever you are using inside your project like all the dependence and all the library that you are using like script
+// * package. json file is a file that contains meta data about your project or list of dependences.
+
+// pacakage-lock.json:-it use for version control.
+
+// git ignore-yaha hum wo cheje likhte hai jo hum github pr push nhi karna chahate hai
+
+// github:-github is a control version tool 
+
+
+// <!-- ==================================================================================== -->
+// import React from "react";
+// function Header(){
+//     return <div>
+//         <h1>Header</h1>
+//     </div>
+// }
+// export default Header;
+
+// //ismai hum noramal import krwate hai like :- import from Header './components/Header';
+
+
+// import React from "react";
+// export function Body(){
+//     return(
+//         <div 
+//         style={
+//             {
+//                 width:"100%",
+//                 height:"50vh",
+//                 backgroundColor:"red",
+//             }
+//         }>
+//         <h1>Body</h1>
+//     </div>
+
+//     ) 
+// }
+// // ismai hum export default agar use nhi krege to humai aese likhna hoga:-
+// import {Body} from './components/Body';
+
+// install prettier extension
+
+// *** Data flow is uni-direction in react=> from parent to child
+
+//Hooks=> Are functions that let you use state and other React features in functional components
+// * hooks we can use only in functional components .
+// hooks:-hooks are nothing but functions,that allows to use state means jo bhi react ka feature hota hai functional componenets mai
+// these number of hooks:-
+// useState-
+// useEffect
+// useContext
+// useReducer
+// useReducer
+// useMemo
+// useCallback
+
+// functional componenets:-ek component jiske andar function use kar rhe hai
+
+// /Two types of components
+
+//Functional components = >
+//Functional components are the components that are created using functions
+//They provide us Hooks to use the state and lifecycle methods in the functional components
+
+//Class components
+
+//usestate=> is a hook that is used to add the state in the functional components
+
+// react mai hum html and js ek file mai likh skte hai
+
+// diffference between useState and props 
+
+// state-state is mutable thing.
+// props-it is a Object.
+//props is like parameter.
+// props are non-mutable.
+// * props(properties):- jb hume data bhejna hota hai apne parent se child ko
+
+//* react ka ek aur feature hota hai, the flow of data is a unique additional way.
+
+// a component is never re-rendering bases on props. if we want to re-render then we have to use useEffect hook.
+
+
+
+// const [count, setcount] = useState(props); is line mai humne use state ko destructure kiya hua hai,
+// useState humko 2 cheeje return karta hai, first-State, it is an internal object and secone one is function.and that is use to modify state.
+// setCount ki help se hum ek state ko update kar skte hai
+// setCount-it is used to modify of count
+
+ 
+
+// destructuring ex:=
+// const [a,b]=[1,2]
+
+
+// useEffect:-ye 2 parameter leta hai , first one callback function and second one as a dependence-jiske upar dependend ho array .
+
+{/* <></>:-it called react fragnent */}
+
+// hamara return single container or div return krta hai
+
+// spread operator is used to destructure
+
+// prevent default behavior:- iske prevent behaviour ko change krdo
+
+// Routing in raect:-
+// mtlb hum navigate kar skte hai different-different page ke bich mai, use routing kahte hai=> react own react router dom for routing
+
+
+// js mai routing ke liye:-anchor tag use and window.location.href
+
+// react router dom is an library. 
+
+// for install libraray:-
+// npm install or(i) react-router-dom
+
+// component of react-router-dom:-
+// * browser router:-ye ek simple componenet hota hai, and navigation ko manage krne ka kaam krta hai , ise hume waha
+// use karna hai jaha hamara root element present hai
+
+// render and return method, they do not support multiple elements, so we have to write single single.
+
+// indexe.js mai hum browserrouter mai app ko wrap krte hai
+
+// routes hamare single single rout ka  collection hota hai
+// routes means collective routes
+// rout means a single rout
+
+// routes attribute:-
+// Path
+
+// element:-ismai opening and closing hota hai 
+// example:-<Routes></Routes>
+// componeent:-ismai opening closing nhi hota hai ye self closing hota hai
+// example:-<Route/>
+ 
+
+// localhost:3000:-default path
+
+// we use link tag intead of anchor tag in react.
+
+// useNavigate hook:-using this hook we can routing conditionally
+// you can also  handle routing by using navigate hook conditionally
+
+// Broserrouter:-it is wraper kind of thing in which we have to whole application to access the feature of react router dom.
+
+// routes:-ismai hum rout ka collection rkhte hai , jo hamre pas different different rout collection hote hai  , unko hum routes ke andar rkhte hai
+
+// rout:-single rout jis pr hum path define karke bta skte hai , kaha pr  jane  pr  konsa element render hoga
+
+// iske pas 2 attribute hote hai...path, element
+// path attribute:-ye yah btata hai ki property ka path konsa hai
+// element attribute:-ye yah btata hai kiproperty mai konsa element render hona chahiye
+
+// link tag hamara anchor tag ki tarah kaam krta hai
+// link tag mai to property hoti hai as well anchor tag mai href property hoti hai
+// to -property ka use krke hum different different pages par absolute or relative url ka use kake ja skte hai
+
+//  async:-it is a keyword that is use before function name , means hamara function asyncronous ho jaye
+//  await:-it  is use only  inside async funstion when we are waiting for something to return
+
+
+// for routing you can use react-router-dom
+
+//Components => BrowserRouter, Route, Link, Routes
+
+// PROPS = > Props are the arguments that are passed to the components from the parent component.
+//Props are immutable => you cannot change the value of the props in the child component.
+//Props are used to pass the data from the parent component to the child component.
+// using props you can share data from one componenet to another
+
+// * every element is object in dom.
+
+// // axios libray command :-npm i axios
+
+// when we are pulling code or cloning the code from github so always we have to:-npm install
+// if we will not do , so that dependence will not come and that code will not run because wo library install  hi nhi rhegi
+
+
+
+
+
+
+// **************************************************************************
+//Hooks=> Are functions that let you use state and other React features in functional components
+
+//useState
+//useEffect
+//useContext
+//useReducer
+//useRef
+//useMemo
+//useCallback
+//custom hoooks
+
+//Two types of components
+
+//Functional components = >
+//Functional components are the components that are created using functions
+//They provide us Hooks to use the state and lifecycle methods in the functional components
+
+//Class components
+
+//usestate=> is a hook that is used to add the state in the functional components
+
+// for routing you can use react-router-dom
+
+//Components => BrowserRouter, Route, Link, Routes
+
+// PROPS = > Props are the arguments that are passed to the components from the parent component.
+//Props are immutable => you cannot change the value of the props in the child component.
+//Props are used to pass the data from the parent component to the child component.
+
+// *****************************************************************
+//Hooks=> Are functions that let you use state and other React features in functional components
+// * hooks we can use only in functional components .
+// hooks:-hooks are nothing but functions,that allows to use state means jo bhi react ka feature hota hai functional componenets mai
+// these number of hooks:-
+// useState-
+// useEffect
+// useContext
+// useReducer
+// useReducer
+// useMemo
+// useCallback
+
+// functional componenets:-ek component jiske andar function use kar rhe hai
+
+// /Two types of components
+
+//Functional components = >
+//Functional components are the components that are created using functions
+//They provide us Hooks to use the state and lifecycle methods in the functional components
+
+//Class components
+
+//usestate=> is a hook that is used to add the state in the functional components
+
+// react mai hum html and js ek file mai likh skte hai
+
+// diffference between useState and props 
+
+// state-state is mutable thing.
+// props-it is a Object.
+//props is like parameter.
+// props are non-mutable.
+// * props(properties):- jb hume data bhejna hota hai apne parent se child ko
+
+//* react ka ek aur feature hota hai, the flow of data is a unique additional way.
+
+// a component is never re-rendering bases on props. if we want to re-render then we have to use useEffect hook.
+
+
+
+// const [count, setcount] = useState(props); is line mai humne use state ko destructure kiya hua hai,
+// useState humko 2 cheeje return karta hai, first-State, it is an internal object and secone one is function.and that is use to modify state.
+// setCount ki help se hum ek state ko update kar skte hai
+// setCount-it is used to modify of count
+
+ 
+
+// destructuring ex:=
+// const [a,b]=[1,2]
+
+
+// useEffect:-ye 2 parameter leta hai , first one callback function and second one as a dependence-jiske upar dependend ho array .
+
+{/* <></>:-it called react fragnent */}
+
+// hamara return single container or div return krta hai
+
+
+
+
+
+
